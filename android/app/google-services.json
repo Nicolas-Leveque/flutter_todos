@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "9726868316",
+    "firebase_url": "https://fire-testing-e125f-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "fire-testing-e125f",
+    "storage_bucket": "fire-testing-e125f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:9726868316:android:94ede49c963bdeb59e9f99",
+        "android_client_info": {
+          "package_name": "com.example.flutter_todos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "9726868316-v0168dfjft4oesj5ad0aq19bgorti55m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMTP7KJBzpcIpCoKSNCOi6A0fwfS1Y2nU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "9726868316-v0168dfjft4oesj5ad0aq19bgorti55m.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "9726868316-02hc0uv44inrv4cc63kp3ngp6bqo58l6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.flutterTodos"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

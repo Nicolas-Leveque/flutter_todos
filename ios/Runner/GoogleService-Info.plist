@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>9726868316-02hc0uv44inrv4cc63kp3ngp6bqo58l6.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.9726868316-02hc0uv44inrv4cc63kp3ngp6bqo58l6</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA98eN08-LhAv4n_4MYGzpCf7GCl8ym6QA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>9726868316</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.flutterTodos</string>
+	<key>PROJECT_ID</key>
+	<string>fire-testing-e125f</string>
+	<key>STORAGE_BUCKET</key>
+	<string>fire-testing-e125f.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:9726868316:ios:e3987b1072696ca39e9f99</string>
+	<key>DATABASE_URL</key>
+	<string>https://fire-testing-e125f-default-rtdb.europe-west1.firebasedatabase.app</string>
+</dict>
+</plist>
