@@ -16,10 +16,12 @@ class _FetchDataState extends State<FetchData> {
   Widget listItem({required Map todos}) {
     final ButtonStyle style = ElevatedButton.styleFrom(
         backgroundColor: Colors.red, textStyle: const TextStyle(fontSize: 20));
+    onToggle(todos) {
+      reference.child(todos['key']).update({'done': !todos['done']});
+    }
 
-    final buttonText = 'Delete';
     return Container(
-        margin: const EdgeInsets.all(10),
+        margin: const EdgeInsets.symmetric(horizontal: 10),
         padding: const EdgeInsets.all(10),
         height: 110,
         color: Colors.black,
@@ -34,7 +36,9 @@ class _FetchDataState extends State<FetchData> {
                   ),
                   title: Text(todos['title']),
                   trailing: ElevatedButton(
-                    onPressed: null,
+                    onPressed: () {
+                      print(todos);
+                    },
                     style: style,
                     child: const Text('Delete'),
                   ))
@@ -43,7 +47,7 @@ class _FetchDataState extends State<FetchData> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
         height: double.infinity,
         child: FirebaseAnimatedList(
             query: dbRef,
