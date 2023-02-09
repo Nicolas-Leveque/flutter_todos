@@ -14,14 +14,11 @@ class _FetchDataState extends State<FetchData> {
   DatabaseReference reference = FirebaseDatabase.instance.ref().child('todos');
 
   Widget listItem({required Map todos}) {
-    final ButtonStyle style = ElevatedButton.styleFrom(
-        backgroundColor: Colors.red, textStyle: const TextStyle(fontSize: 20));
-    onToggle(todos) {
-      reference.child(todos['key']).update({'done': !todos['done']});
-    }
+    // onToggle(todos) {
+    //   reference.child(todos['key']).update({'done': !todos['done']});
+    // }
 
     return Container(
-        margin: const EdgeInsets.symmetric(horizontal: 10),
         padding: const EdgeInsets.all(10),
         height: 110,
         color: Colors.black,
@@ -32,15 +29,17 @@ class _FetchDataState extends State<FetchData> {
               ListTile(
                   leading: Checkbox(
                     value: todos['done'],
-                    onChanged: null,
+                    onChanged: (bool? value) {
+                      reference.child(todos['key']).update({'done': value});
+                    },
                   ),
                   title: Text(todos['title']),
-                  trailing: ElevatedButton(
+                  trailing: IconButton(
+                    color: Colors.red,
+                    icon: const Icon(Icons.delete),
                     onPressed: () {
-                      print(todos);
+                      reference.child(todos['key']).remove();
                     },
-                    style: style,
-                    child: const Text('Delete'),
                   ))
             ]));
   }
